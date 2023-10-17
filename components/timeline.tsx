@@ -2,18 +2,9 @@
 
 import React from "react";
 import SectionHeading from "./heading";
-import { WorkflowIcon } from "lucide-react";
-import { HiSwitchHorizontal } from "react-icons/hi";
-import {
-  VerticalTimeline,
-  VerticalTimelineElement,
-} from "react-vertical-timeline-component";
-import "react-vertical-timeline-component/style.min.css";
 
-import { AiOutlineStar } from "react-icons/ai";
-import { IoMdSchool } from "react-icons/io";
 import { experience } from "@/constants/education";
-import { cn } from "@/lib/utils";
+
 import { motion } from "framer-motion";
 
 const variants = {
