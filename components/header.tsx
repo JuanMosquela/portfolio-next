@@ -6,7 +6,7 @@ import { HiOutlineArrowNarrowRight, HiDownload } from "react-icons/hi";
 
 export default function Header() {
   return (
-    <div className="flex flex-wrap  gap-10 items-center mt-28 mb-20">
+    <div className="flex flex-wrap  gap-10 items-center mt-28 mb-36">
       <div>
         <motion.h1
           className="mb-6 mt-4 max-w-[668px] text-center lg:text-left  text-2xl font-medium !leading-[1.5] sm:text-4xl"
@@ -27,7 +27,7 @@ export default function Header() {
         >
           <Button className="rounded-full text-sm md:text-md py-4 px-3 md:px-6">
             Contact me here
-            <HiOutlineArrowNarrowRight className="ml-1 " scale={0.1} />
+            <HiOutlineArrowNarrowRight className="ml-1 md:ml-3 " scale={0.1} />
           </Button>
           <Button
             className="rounded-full text-sm md:text-md py-4 px-3 md:px-6 text-slate-700"
@@ -37,7 +37,7 @@ export default function Header() {
               Download CV
             </a>
 
-            <HiDownload className="ml-1" scale={0.1} />
+            <HiDownload className="ml-1 md:ml-3" scale={0.1} />
           </Button>
         </motion.div>
       </div>
