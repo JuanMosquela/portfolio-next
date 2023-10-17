@@ -13,8 +13,8 @@ export default function About() {
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
         <span className="font-medium">Accounting</span>, I decided to pursue my
-        passion for programming. I enrolled in a coding bootcamp and learned{" "}
-        <span className="font-medium">full-stack web development</span>.{" "}
+        passion for programming. I enrolled in a coding bootcamp and learned
+        <span className="font-medium">full-stack web development</span>.
         Currently, I am committed to my continuous growth and expanding my
         knowledge, which is why I am studying at the National Technological
         University, where I am pursuing a degree in programming and systems.
@@ -24,18 +24,18 @@ export default function About() {
         problem-solving aspect. I <span className="underline">love</span> the
         feeling of finally figuring out a solution to a problem. My core stack
         is <span className="font-medium">React, Next.js, Node.js, and SQL</span>
-        . I am also familiar with{" "}
+        . I am also familiar with
         <span className="font-medium">TypeScript and .NET</span>. I am always
-        looking to learn new technologies. I am currently looking for a{" "}
+        looking to learn new technologies. I am currently looking for a
         <span className="font-medium">full-time position</span> as a software
         developer.
       </p>
 
       <p>
         <span className="italic">When I'm not coding</span>, I enjoy playing
-        video games, watching movies, and playing with my dog. I also enjoy{" "}
+        video games, watching movies, and playing with my dog. I also enjoy
         <span className="font-medium">learning new things</span>. I am currently
-        learning about{" "}
+        learning about
         <span className="font-medium">history and philosophy</span>. I'm also
         learning how to play the guitar.
       </p>
