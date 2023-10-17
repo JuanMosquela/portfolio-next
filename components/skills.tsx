@@ -27,7 +27,7 @@ export default function Skills() {
       viewport={{ once: true }}
     >
       <SectionHeading>Skills</SectionHeading>
-      <ul className="flex justify-center  flex-wrap  gap-2">
+      <ul className="flex justify-center  flex-wrap  gap-4">
         {skills.map((skill, index) => (
           <motion.li
             initial="initial"
@@ -37,8 +37,8 @@ export default function Skills() {
             viewport={{ once: true }}
             className="group hover:!translate-y-[-7px] duration-150"
           >
-            <div className="rounded-full shadow-md shadow-black/[0.03] border-opacity-80 w-20 h-20  flex items-center  justify-center flex-col hover:scale-110 duration-150 delay-75 transition-all ">
-              <Image src={skill.icon} width={38} alt={`${skill.title} icon`} />
+            <div className="rounded-full shadow-md shadow-black/[0.06] border-opacity-80 w-16 h-16  flex items-center  justify-center flex-col hover:scale-110 duration-150 delay-75 transition-all ">
+              <Image src={skill.icon} width={40} alt={`${skill.title} icon`} />
             </div>
             <h4
               className={cn(
