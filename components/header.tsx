@@ -33,7 +33,7 @@ export default function Header() {
             className="rounded-full text-sm md:text-md py-4 px-3 md:px-6 text-slate-700"
             variant="outline"
           >
-            <a href="/DV.pdf" download>
+            <a href="/juan-developer-cv.pdf" download>
               Download CV
             </a>
 
