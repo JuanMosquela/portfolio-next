@@ -8,6 +8,7 @@ export default function About() {
       initial={{ opacity: 0, y: 100 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
+      viewport={{ once: true }}
       id="about"
     >
       <SectionHeading>About me</SectionHeading>

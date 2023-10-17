@@ -24,6 +24,7 @@ export default function Skills() {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
       id="skills"
+      viewport={{ once: true }}
     >
       <SectionHeading>Skills</SectionHeading>
       <ul className="flex justify-center  flex-wrap  gap-2">
@@ -33,6 +34,7 @@ export default function Skills() {
             whileInView="animate"
             variants={variants}
             custom={index}
+            viewport={{ once: true }}
             className="group hover:!translate-y-[-7px] duration-150"
           >
             <div className="rounded-full shadow-md shadow-black/[0.03] border-opacity-80 w-20 h-20  flex items-center  justify-center flex-col hover:scale-110 duration-150 delay-75 transition-all ">
