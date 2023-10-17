@@ -1,30 +1,26 @@
 export const experience = [
   {
-    title: "web development",
-    place: "coderhouse",
-
-    text: "I leanred how to design, style and structure responsive web pages and how to deploy them to the internet",
+    title: "Web Development",
+    place: "CoderHouse",
+    text: "I learned how to design, style, and structure responsive web pages and how to deploy them on the internet.",
     date: "February 2022 - April 2023",
   },
   {
-    title: "javascript",
-    place: "coderhouse",
-
-    text: "Here I learned one of the most used lenguajes in web development and get used to DOM manipulation, WEB APIs, asyncronus calls and more",
+    title: "JavaScript",
+    place: "CoderHouse",
+    text: "Here, I learned one of the most used languages in web development and got used to DOM manipulation, web APIs, asynchronous calls, and more.",
     date: "April 2022 - January 2023",
   },
   {
     title: "React",
-    place: "coderhouse",
-
-    text: "This course went throught the basis; state, hooks and conditional rendering to more advanced topics like state managment packakes, ",
+    place: "CoderHouse",
+    text: "This course covered the basics, including state, hooks, and conditional rendering, and also delved into more advanced topics like state management packages.",
     date: "January 2022 - July 2023",
   },
   {
-    title: "programming and sistem tecnical tecnicature",
-    place: "universidad tecnologica nacional",
-
-    text: "I decided to get a deeper understanding of the programming fundamentals, ",
+    title: "Programming and System Technical Technician",
+    place: "Universidad Tecnológica Nacional",
+    text: "I decided to gain a deeper understanding of programming fundamentals.",
     date: "2023 - Current",
   },
 ];
