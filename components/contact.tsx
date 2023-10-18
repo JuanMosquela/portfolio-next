@@ -43,7 +43,9 @@ export default function Contact() {
         </p>
         <Form {...form}>
           <form
-            action={onSubmit}
+            action={async (formData) => {
+              await onSubmit(formData);
+            }}
             className="mb-28 max-w-[700px] mx-auto flex flex-col gap-4"
           >
             <FormField
