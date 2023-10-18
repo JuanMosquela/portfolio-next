@@ -53,6 +53,7 @@ export default function Contact() {
                 });
               } catch (error) {
                 toast({
+                  variant: "destructive",
                   description: "Something went wrong.",
                 });
               }
