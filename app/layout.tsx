@@ -5,7 +5,7 @@ import { Inter } from "next/font/google";
 import ThemeContextProvider from "@/context/theme-context";
 import ThemeSwitcher from "@/components/theme-switcher";
 import Navbar from "@/components/navbar";
-import { Toaster } from "@/components/ui/toaster";
+import { Toaster } from "react-hot-toast";
 
 const inter = Inter({ subsets: ["latin"] });
 

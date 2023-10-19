@@ -9,7 +9,8 @@ import { onSubmit } from "@/actions/send-email";
 import { Textarea } from "./ui/textarea";
 import { motion } from "framer-motion";
 import { BsFillSendFill } from "react-icons/bs";
-import { useToast } from "./ui/use-toast";
+import { toast } from "react-hot-toast";
+import { cn } from "@/lib/utils";
 
 const formSchema = z.object({
   email: z.string().email(),
@@ -20,7 +21,6 @@ const formSchema = z.object({
 });
 
 export default function Contact() {
-  const { toast } = useToast();
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -47,15 +47,11 @@ export default function Contact() {
           <form
             action={async (formData) => {
               try {
-                await onSubmit(formData);
-                toast({
-                  description: "Your message has been sent.",
-                });
+                const { message } = await onSubmit(formData);
+                toast.success(`${message}`);
               } catch (error) {
-                toast({
-                  variant: "destructive",
-                  description: "Something went wrong.",
-                });
+                toast.error(`Somethin went wrong`);
+                console.log(error);
               }
             }}
             className="mb-28 max-w-[700px] mx-auto flex flex-col gap-4"
@@ -97,10 +93,12 @@ export default function Contact() {
             />
             <Button
               type="submit"
-              className="rounded-full w-fit px-6 py-1 flex gap-3 items-center mx-auto"
+              className={cn(
+                "rounded-full w-fit px-6 py-1 flex gap-3 items-center mx-auto "
+              )}
             >
-              Submit
-              <BsFillSendFill />
+              {false ? "Proccesing" : "Submit"}
+              {!false && <BsFillSendFill />}
             </Button>
           </form>
         </Form>

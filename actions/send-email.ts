@@ -36,6 +36,8 @@ export const onSubmit = async (formData: FormData) => {
       //     senderEmail: email,
       //   }),
     });
+
+    return { message: "Message sent succesfully", status: 200 };
   } catch (error: unknown) {
     return {
       error: "error",
